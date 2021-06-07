@@ -27,6 +27,7 @@ func httpRequest() {
 	}
 	defer resp.Body.Close()
 	body, err := io.ReadAll(resp.Body)
+	fmt.Printf(string(body))
 }
 
 func main() {
